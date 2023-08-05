@@ -27,14 +27,14 @@ class EventServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Event::listen('routes.translation', function($locale, $attributes)
-        {
-            // Do your magic
-
-            foreach ($attributes as $key=>$value) {
-                $attributes[$key] = $value. ' '.$locale;
-            }
-            return $attributes;
-        });
+//        Event::listen('routes.translation', function($locale, $attributes)
+//        {
+//            // Do your magic
+//
+//            foreach ($attributes as $key=>$value) {
+//                $attributes[$key] = $value. ' '.$locale;
+//            }
+//            return $attributes;
+//        });
     }
 }
